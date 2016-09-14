@@ -3,20 +3,34 @@
 	===========================================================================
 	 Created with: 	SAPIEN Technologies, Inc., PowerShell Studio 2016 v5.2.119
 	 Created on:   	2016-09-14 18:46
-	 Created by:   	MikeL
-	 Organization: 	
-	 Filename:     	
+	 Created by:   	Mike Sims
+	 Filename:     	Get-DotNetInstalledVersion.ps1
 	===========================================================================
 	.DESCRIPTION
-		A description of the file.
+		Get-DotNetInstalledVersion Function
+#>
+
+<#
+	.SYNOPSIS
+		Returns Installed .Net Versions
+	
+	.DESCRIPTION
+		Returns Installed .Net Versions
+	
+	.NOTES
+		
 #>
 
 Function Get-DotNetInstalledVersion
 {
+	[CmdletBinding()]
+	[OutputType([PsCustomObject])]
+	Param ()
+	
 	$DotNetVersion = Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP' -Recurse |
 	Get-ItemProperty -name Version, Release -EA 0 |
-	Where { $_.PSChildName -match '^(?!S)\p{L}' } |
-	Select PSChildName, Version, Release
+	Where-Object { $_.PSChildName -match '^(?!S)\p{L}' } |
+	Select-Object PSChildName, Version, Release
 	
 	Return $DotNetVersion
 }

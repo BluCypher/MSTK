@@ -3,36 +3,35 @@
 	===========================================================================
 	 Created with: 	SAPIEN Technologies, Inc., PowerShell Studio 2016 v5.2.119
 	 Created on:   	2016-09-14 18:46
-	 Created by:   	MikeL
-	 Organization: 	
-	 Filename:     	
+	 Created by:   	Mike Sims
+	 Filename:     	Get-Uptime.ps1
 	===========================================================================
 	.DESCRIPTION
-		A description of the file.
+		Get-UpTime Function
+#>
+
+<#
+	.SYNOPSIS
+		Returns uptime information of a local or remote system.
+	
+	.DESCRIPTION
+		Returns uptime information of a local or remote system.
+	
+	.PARAMETER ComputerName
+		HostName of a remote computer.
+	
+	.EXAMPLE
+		PS C:\> Get-UpTime -ComputerName 'ComputerName'
+	
+	.NOTES
+		
 #>
 
 Function Get-UpTime
 {
-	<#
-		.SYNOPSIS
-			Returns uptime information of a local or remote system.
-		
-		.DESCRIPTION
-			Returns uptime information of a local or remote system.
-		
-		.PARAMETER ComputerName
-			HostName of a remote computer.
-		
-		.EXAMPLE
-			PS C:\> Get-UpTime -ComputerName 'ComputerName'
-		
-		.NOTES
-			Additional information about the function.
-	#>
-	
 	[CmdletBinding()]
 	[OutputType([System.TimeSpan])]
-	param
+	Param
 	(
 		[Parameter(ValueFromPipeline = $True,
 				   ValueFromPipelineByPropertyName = $True,
