@@ -1,0 +1,158 @@
+﻿<Project>
+  <Version>1.1</Version>
+  <FileID>34b0c37f-9e06-44e5-90d9-59c91dbd8c62</FileID>
+  <ProjectType>1</ProjectType>
+  <Folders>
+    <Folder>Applications</Folder>
+    <Folder>Functions</Folder>
+    <Folder>Modules</Folder>
+    <Folder>Applications\Sysinternals</Folder>
+  </Folders>
+  <Files>
+    <File ReferenceName="" Build="2">MSTK.psd1</File>
+    <File ReferenceName="" Build="0">MSTK.psm1</File>
+    <File ReferenceName="Call-MSTK_Profile_ps1" Build="0" CommandExtension="False">MSTK_Profile.ps1</File>
+    <File ReferenceName="Call-_SyncStatus" Build="1">Applications\Sysinternals\.SyncStatus</File>
+    <File ReferenceName="Call-accesschk_exe" Build="1">Applications\Sysinternals\accesschk.exe</File>
+    <File ReferenceName="Call-accesschk64_exe" Build="1">Applications\Sysinternals\accesschk64.exe</File>
+    <File ReferenceName="Call-AccessEnum_exe" Build="1">Applications\Sysinternals\AccessEnum.exe</File>
+    <File ReferenceName="Call-AdExplorer_chm" Build="1">Applications\Sysinternals\AdExplorer.chm</File>
+    <File ReferenceName="Call-ADExplorer_exe" Build="1">Applications\Sysinternals\ADExplorer.exe</File>
+    <File ReferenceName="Call-ADInsight_chm" Build="1">Applications\Sysinternals\ADInsight.chm</File>
+    <File ReferenceName="Call-ADInsight_exe" Build="1">Applications\Sysinternals\ADInsight.exe</File>
+    <File ReferenceName="Call-adrestore_exe" Build="1">Applications\Sysinternals\adrestore.exe</File>
+    <File ReferenceName="Call-Autologon_exe" Build="1">Applications\Sysinternals\Autologon.exe</File>
+    <File ReferenceName="Call-autoruns_chm" Build="1">Applications\Sysinternals\autoruns.chm</File>
+    <File ReferenceName="Call-autoruns_exe" Build="1">Applications\Sysinternals\autoruns.exe</File>
+    <File ReferenceName="Call-Autoruns64_exe" Build="1">Applications\Sysinternals\Autoruns64.exe</File>
+    <File ReferenceName="Call-autorunsc_exe" Build="1">Applications\Sysinternals\autorunsc.exe</File>
+    <File ReferenceName="Call-autorunsc64_exe" Build="1">Applications\Sysinternals\autorunsc64.exe</File>
+    <File ReferenceName="Call-Bginfo_exe" Build="1">Applications\Sysinternals\Bginfo.exe</File>
+    <File ReferenceName="Call-Cacheset_exe" Build="1">Applications\Sysinternals\Cacheset.exe</File>
+    <File ReferenceName="Call-Clockres_exe" Build="1">Applications\Sysinternals\Clockres.exe</File>
+    <File ReferenceName="Call-Clockres64_exe" Build="1">Applications\Sysinternals\Clockres64.exe</File>
+    <File ReferenceName="Call-Contig_exe" Build="1">Applications\Sysinternals\Contig.exe</File>
+    <File ReferenceName="Call-Contig64_exe" Build="1">Applications\Sysinternals\Contig64.exe</File>
+    <File ReferenceName="Call-Coreinfo_exe" Build="1">Applications\Sysinternals\Coreinfo.exe</File>
+    <File ReferenceName="Call-ctrl2cap_exe" Build="1">Applications\Sysinternals\ctrl2cap.exe</File>
+    <File ReferenceName="Call-dbgview_chm" Build="1">Applications\Sysinternals\dbgview.chm</File>
+    <File ReferenceName="Call-Dbgview_exe" Build="1">Applications\Sysinternals\Dbgview.exe</File>
+    <File ReferenceName="Call-DEFRAG_EXE" Build="1">Applications\Sysinternals\DEFRAG.EXE</File>
+    <File ReferenceName="Call-Desktops_exe" Build="1">Applications\Sysinternals\Desktops.exe</File>
+    <File ReferenceName="Call-Disk2vhd_chm" Build="1">Applications\Sysinternals\Disk2vhd.chm</File>
+    <File ReferenceName="Call-disk2vhd_exe" Build="1">Applications\Sysinternals\disk2vhd.exe</File>
+    <File ReferenceName="Call-diskext_exe" Build="1">Applications\Sysinternals\diskext.exe</File>
+    <File ReferenceName="Call-diskext64_exe" Build="1">Applications\Sysinternals\diskext64.exe</File>
+    <File ReferenceName="Call-Diskmon_exe" Build="1">Applications\Sysinternals\Diskmon.exe</File>
+    <File ReferenceName="Call-DiskView_exe" Build="1">Applications\Sysinternals\DiskView.exe</File>
+    <File ReferenceName="Call-du_exe" Build="1">Applications\Sysinternals\du.exe</File>
+    <File ReferenceName="Call-du64_exe" Build="1">Applications\Sysinternals\du64.exe</File>
+    <File ReferenceName="Call-efsdump_exe" Build="1">Applications\Sysinternals\efsdump.exe</File>
+    <File ReferenceName="Call-FindLinks_exe" Build="1">Applications\Sysinternals\FindLinks.exe</File>
+    <File ReferenceName="Call-FindLinks64_exe" Build="1">Applications\Sysinternals\FindLinks64.exe</File>
+    <File ReferenceName="Call-handle_exe" Build="1">Applications\Sysinternals\handle.exe</File>
+    <File ReferenceName="Call-handle64_exe" Build="1">Applications\Sysinternals\handle64.exe</File>
+    <File ReferenceName="Call-hex2dec_exe" Build="1">Applications\Sysinternals\hex2dec.exe</File>
+    <File ReferenceName="Call-hex2dec64_exe" Build="1">Applications\Sysinternals\hex2dec64.exe</File>
+    <File ReferenceName="Call-junction_exe" Build="1">Applications\Sysinternals\junction.exe</File>
+    <File ReferenceName="Call-junction64_exe" Build="1">Applications\Sysinternals\junction64.exe</File>
+    <File ReferenceName="Call-ldmdump_exe" Build="1">Applications\Sysinternals\ldmdump.exe</File>
+    <File ReferenceName="Call-Listdlls_exe" Build="1">Applications\Sysinternals\Listdlls.exe</File>
+    <File ReferenceName="Call-Listdlls64_exe" Build="1">Applications\Sysinternals\Listdlls64.exe</File>
+    <File ReferenceName="Call-livekd_exe" Build="1">Applications\Sysinternals\livekd.exe</File>
+    <File ReferenceName="Call-LoadOrd_exe" Build="1">Applications\Sysinternals\LoadOrd.exe</File>
+    <File ReferenceName="Call-LoadOrd64_exe" Build="1">Applications\Sysinternals\LoadOrd64.exe</File>
+    <File ReferenceName="Call-LoadOrdC_exe" Build="1">Applications\Sysinternals\LoadOrdC.exe</File>
+    <File ReferenceName="Call-LoadOrdC64_exe" Build="1">Applications\Sysinternals\LoadOrdC64.exe</File>
+    <File ReferenceName="Call-logonsessions_exe" Build="1">Applications\Sysinternals\logonsessions.exe</File>
+    <File ReferenceName="Call-logonsessions64_exe" Build="1">Applications\Sysinternals\logonsessions64.exe</File>
+    <File ReferenceName="Call-movefile_exe" Build="1">Applications\Sysinternals\movefile.exe</File>
+    <File ReferenceName="Call-movefile64_exe" Build="1">Applications\Sysinternals\movefile64.exe</File>
+    <File ReferenceName="Call-notmyfault_exe" Build="1">Applications\Sysinternals\notmyfault.exe</File>
+    <File ReferenceName="Call-notmyfault64_exe" Build="1">Applications\Sysinternals\notmyfault64.exe</File>
+    <File ReferenceName="Call-notmyfaultc_exe" Build="1">Applications\Sysinternals\notmyfaultc.exe</File>
+    <File ReferenceName="Call-notmyfaultc64_exe" Build="1">Applications\Sysinternals\notmyfaultc64.exe</File>
+    <File ReferenceName="Call-ntfsinfo_exe" Build="1">Applications\Sysinternals\ntfsinfo.exe</File>
+    <File ReferenceName="Call-ntfsinfo64_exe" Build="1">Applications\Sysinternals\ntfsinfo64.exe</File>
+    <File ReferenceName="Call-pagedfrg_exe" Build="1">Applications\Sysinternals\pagedfrg.exe</File>
+    <File ReferenceName="Call-pendmoves_exe" Build="1">Applications\Sysinternals\pendmoves.exe</File>
+    <File ReferenceName="Call-pendmoves64_exe" Build="1">Applications\Sysinternals\pendmoves64.exe</File>
+    <File ReferenceName="Call-pipelist_exe" Build="1">Applications\Sysinternals\pipelist.exe</File>
+    <File ReferenceName="Call-pipelist64_exe" Build="1">Applications\Sysinternals\pipelist64.exe</File>
+    <File ReferenceName="Call-portmon_exe" Build="1">Applications\Sysinternals\portmon.exe</File>
+    <File ReferenceName="Call-procdump_exe" Build="1">Applications\Sysinternals\procdump.exe</File>
+    <File ReferenceName="Call-procdump64_exe" Build="1">Applications\Sysinternals\procdump64.exe</File>
+    <File ReferenceName="Call-procexp_chm" Build="1">Applications\Sysinternals\procexp.chm</File>
+    <File ReferenceName="Call-procexp_exe" Build="1">Applications\Sysinternals\procexp.exe</File>
+    <File ReferenceName="Call-procmon_chm" Build="1">Applications\Sysinternals\procmon.chm</File>
+    <File ReferenceName="Call-Procmon_exe" Build="1">Applications\Sysinternals\Procmon.exe</File>
+    <File ReferenceName="Call-psexec_exe" Build="1">Applications\Sysinternals\psexec.exe</File>
+    <File ReferenceName="Call-PsExec64_exe" Build="1">Applications\Sysinternals\PsExec64.exe</File>
+    <File ReferenceName="Call-psfile_exe" Build="1">Applications\Sysinternals\psfile.exe</File>
+    <File ReferenceName="Call-psfile64_exe" Build="1">Applications\Sysinternals\psfile64.exe</File>
+    <File ReferenceName="Call-psgetsid_exe" Build="1">Applications\Sysinternals\psgetsid.exe</File>
+    <File ReferenceName="Call-PsGetsid64_exe" Build="1">Applications\Sysinternals\PsGetsid64.exe</File>
+    <File ReferenceName="Call-Psinfo_exe" Build="1">Applications\Sysinternals\Psinfo.exe</File>
+    <File ReferenceName="Call-PsInfo64_exe" Build="1">Applications\Sysinternals\PsInfo64.exe</File>
+    <File ReferenceName="Call-pskill_exe" Build="1">Applications\Sysinternals\pskill.exe</File>
+    <File ReferenceName="Call-pskill64_exe" Build="1">Applications\Sysinternals\pskill64.exe</File>
+    <File ReferenceName="Call-pslist_exe" Build="1">Applications\Sysinternals\pslist.exe</File>
+    <File ReferenceName="Call-pslist64_exe" Build="1">Applications\Sysinternals\pslist64.exe</File>
+    <File ReferenceName="Call-psloggedon_exe" Build="1">Applications\Sysinternals\psloggedon.exe</File>
+    <File ReferenceName="Call-PsLoggedon64_exe" Build="1">Applications\Sysinternals\PsLoggedon64.exe</File>
+    <File ReferenceName="Call-psloglist_exe" Build="1">Applications\Sysinternals\psloglist.exe</File>
+    <File ReferenceName="Call-pspasswd_exe" Build="1">Applications\Sysinternals\pspasswd.exe</File>
+    <File ReferenceName="Call-pspasswd64_exe" Build="1">Applications\Sysinternals\pspasswd64.exe</File>
+    <File ReferenceName="Call-psping_exe" Build="1">Applications\Sysinternals\psping.exe</File>
+    <File ReferenceName="Call-psping64_exe" Build="1">Applications\Sysinternals\psping64.exe</File>
+    <File ReferenceName="Call-psservice_exe" Build="1">Applications\Sysinternals\psservice.exe</File>
+    <File ReferenceName="Call-PsService64_exe" Build="1">Applications\Sysinternals\PsService64.exe</File>
+    <File ReferenceName="Call-psshutdown_exe" Build="1">Applications\Sysinternals\psshutdown.exe</File>
+    <File ReferenceName="Call-pssuspend_exe" Build="1">Applications\Sysinternals\pssuspend.exe</File>
+    <File ReferenceName="Call-pssuspend64_exe" Build="1">Applications\Sysinternals\pssuspend64.exe</File>
+    <File ReferenceName="Call-Pstools_chm" Build="1">Applications\Sysinternals\Pstools.chm</File>
+    <File ReferenceName="Call-RAMMap_exe" Build="1">Applications\Sysinternals\RAMMap.exe</File>
+    <File ReferenceName="Call-RegDelNull_exe" Build="1">Applications\Sysinternals\RegDelNull.exe</File>
+    <File ReferenceName="Call-RegDelNull64_exe" Build="1">Applications\Sysinternals\RegDelNull64.exe</File>
+    <File ReferenceName="Call-Reghide_exe" Build="1">Applications\Sysinternals\Reghide.exe</File>
+    <File ReferenceName="Call-regjump_exe" Build="1">Applications\Sysinternals\regjump.exe</File>
+    <File ReferenceName="Call-RootkitRevealer_chm" Build="1">Applications\Sysinternals\RootkitRevealer.chm</File>
+    <File ReferenceName="Call-RootkitRevealer_exe" Build="1">Applications\Sysinternals\RootkitRevealer.exe</File>
+    <File ReferenceName="Call-ru_exe" Build="1">Applications\Sysinternals\ru.exe</File>
+    <File ReferenceName="Call-ru64_exe" Build="1">Applications\Sysinternals\ru64.exe</File>
+    <File ReferenceName="Call-sdelete_exe" Build="1">Applications\Sysinternals\sdelete.exe</File>
+    <File ReferenceName="Call-sdelete64_exe" Build="1">Applications\Sysinternals\sdelete64.exe</File>
+    <File ReferenceName="Call-ShareEnum_exe" Build="1">Applications\Sysinternals\ShareEnum.exe</File>
+    <File ReferenceName="Call-ShellRunas_exe" Build="1">Applications\Sysinternals\ShellRunas.exe</File>
+    <File ReferenceName="Call-sigcheck_exe" Build="1">Applications\Sysinternals\sigcheck.exe</File>
+    <File ReferenceName="Call-sigcheck64_exe" Build="1">Applications\Sysinternals\sigcheck64.exe</File>
+    <File ReferenceName="Call-streams_exe" Build="1">Applications\Sysinternals\streams.exe</File>
+    <File ReferenceName="Call-streams64_exe" Build="1">Applications\Sysinternals\streams64.exe</File>
+    <File ReferenceName="Call-strings_exe" Build="1">Applications\Sysinternals\strings.exe</File>
+    <File ReferenceName="Call-strings64_exe" Build="1">Applications\Sysinternals\strings64.exe</File>
+    <File ReferenceName="Call-sync_exe" Build="1">Applications\Sysinternals\sync.exe</File>
+    <File ReferenceName="Call-sync64_exe" Build="1">Applications\Sysinternals\sync64.exe</File>
+    <File ReferenceName="Call-SyncTools_exe" Build="1">Applications\Sysinternals\SyncTools.exe</File>
+    <File ReferenceName="Call-sysinternals3_nlp" Build="1">Applications\Sysinternals\sysinternals3.nlp</File>
+    <File ReferenceName="Call-Sysmon_exe" Build="1">Applications\Sysinternals\Sysmon.exe</File>
+    <File ReferenceName="Call-Sysmon64_exe" Build="1">Applications\Sysinternals\Sysmon64.exe</File>
+    <File ReferenceName="Call-tcpvcon_exe" Build="1">Applications\Sysinternals\tcpvcon.exe</File>
+    <File ReferenceName="Call-tcpview_chm" Build="1">Applications\Sysinternals\tcpview.chm</File>
+    <File ReferenceName="Call-Tcpview_exe" Build="1">Applications\Sysinternals\Tcpview.exe</File>
+    <File ReferenceName="Call-Testlimit_exe" Build="1">Applications\Sysinternals\Testlimit.exe</File>
+    <File ReferenceName="Call-Testlimit64_exe" Build="1">Applications\Sysinternals\Testlimit64.exe</File>
+    <File ReferenceName="Call-Vmmap_chm" Build="1">Applications\Sysinternals\Vmmap.chm</File>
+    <File ReferenceName="Call-vmmap_exe" Build="1">Applications\Sysinternals\vmmap.exe</File>
+    <File ReferenceName="Call-Volumeid_exe" Build="1">Applications\Sysinternals\Volumeid.exe</File>
+    <File ReferenceName="Call-Volumeid64_exe" Build="1">Applications\Sysinternals\Volumeid64.exe</File>
+    <File ReferenceName="Call-whois_exe" Build="1">Applications\Sysinternals\whois.exe</File>
+    <File ReferenceName="Call-whois64_exe" Build="1">Applications\Sysinternals\whois64.exe</File>
+    <File ReferenceName="Call-Winobj_exe" Build="1">Applications\Sysinternals\Winobj.exe</File>
+    <File ReferenceName="Call-ZoomIt_exe" Build="1">Applications\Sysinternals\ZoomIt.exe</File>
+    <File ReferenceName="Call-Get-DotNetInstalledVersion_ps1" Build="0" CommandExtension="False">Functions\Get-DotNetInstalledVersion.ps1</File>
+    <File ReferenceName="Call-Get-DotNetRuntimeVersion_ps1" Build="0" CommandExtension="False">Functions\Get-DotNetRuntimeVersion.ps1</File>
+    <File ReferenceName="Call-Get-Uptime_ps1" Build="0" CommandExtension="False">Functions\Get-Uptime.ps1</File>
+  </Files>
+  <StartupScript>
+  </StartupScript>
+</Project>
