@@ -10,19 +10,19 @@
 		Get-DotNetRuntimeVersion Function
 #>
 
-<#
-	.SYNOPSIS
-		Returns .Net runtime version
-	
-	.DESCRIPTION
-		Returns .Net runtime version for the current environment
-	
-	.NOTES
-		
-#>
-
 Function Get-DotNetRuntimeVersion
 {
+	<#
+		.SYNOPSIS
+			Returns .Net runtime version
+		
+		.DESCRIPTION
+			Returns .Net runtime version for the current environment
+		
+		.NOTES
+			
+	#>
+	
 	[CmdletBinding()]
 	[OutputType([System.Version])]
 	Param ()

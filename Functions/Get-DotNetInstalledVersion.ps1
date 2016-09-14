@@ -10,19 +10,19 @@
 		Get-DotNetInstalledVersion Function
 #>
 
-<#
-	.SYNOPSIS
-		Returns Installed .Net Versions
-	
-	.DESCRIPTION
-		Returns Installed .Net Versions
-	
-	.NOTES
-		
-#>
-
 Function Get-DotNetInstalledVersion
 {
+	<#
+		.SYNOPSIS
+			Returns Installed .Net Versions
+		
+		.DESCRIPTION
+			Returns Installed .Net Versions
+		
+		.NOTES
+			
+	#>
+	
 	[CmdletBinding()]
 	[OutputType([PsCustomObject])]
 	Param ()

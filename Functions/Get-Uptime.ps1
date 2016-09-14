@@ -10,25 +10,25 @@
 		Get-UpTime Function
 #>
 
-<#
-	.SYNOPSIS
-		Returns uptime information of a local or remote system.
-	
-	.DESCRIPTION
-		Returns uptime information of a local or remote system.
-	
-	.PARAMETER ComputerName
-		HostName of a remote computer.
-	
-	.EXAMPLE
-		PS C:\> Get-UpTime -ComputerName 'ComputerName'
-	
-	.NOTES
-		
-#>
-
 Function Get-UpTime
 {
+	<#
+		.SYNOPSIS
+			Returns uptime information of a local or remote system.
+		
+		.DESCRIPTION
+			Returns uptime information of a local or remote system.
+		
+		.PARAMETER ComputerName
+			HostName of a remote computer.
+		
+		.EXAMPLE
+			PS C:\> Get-UpTime -ComputerName 'ComputerName'
+		
+		.NOTES
+			
+	#>
+	
 	[CmdletBinding()]
 	[OutputType([System.TimeSpan])]
 	Param

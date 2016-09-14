@@ -152,6 +152,7 @@
     <File ReferenceName="Call-Get-DotNetInstalledVersion_ps1" Build="0" CommandExtension="False">Functions\Get-DotNetInstalledVersion.ps1</File>
     <File ReferenceName="Call-Get-DotNetRuntimeVersion_ps1" Build="0" CommandExtension="False">Functions\Get-DotNetRuntimeVersion.ps1</File>
     <File ReferenceName="Call-Get-Uptime_ps1" Build="0" CommandExtension="False">Functions\Get-Uptime.ps1</File>
+    <File ReferenceName="Call-Convert-WindowsImage_ps1" Build="0" CommandExtension="False">Functions\Convert-WindowsImage.ps1</File>
   </Files>
   <StartupScript>
   </StartupScript>
