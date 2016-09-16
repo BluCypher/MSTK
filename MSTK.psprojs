@@ -4,5 +4,7 @@
   <OpenFolders>
     <Folder>Functions</Folder>
   </OpenFolders>
-  <OpenFiles />
+  <OpenFiles>
+    <File>Functions\Get-InstalledSoftware.ps1</File>
+  </OpenFiles>
 </ProjectState>
