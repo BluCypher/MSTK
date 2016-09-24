@@ -1,6 +1,9 @@
 # PowerShell Studio Temp Files
 *.TempPoint.*
 
+# Atom Temp Files
+*~
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
