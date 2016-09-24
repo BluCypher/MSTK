@@ -7,8 +7,9 @@
 	 Created by:   	Mike Sims
 	 Changed on:   	2016-09-15
 	 Changed by:   	Mike Sims
-	 Version:     	1.0
+	 Version:     	1.1
 	 History:      	1.0 - Initial Release - No known bugs
+                    1.1 - Enabled Strict Mode
 	===========================================================================
 	.DESCRIPTION
 		Get-DotNetInstalledVersion Function
@@ -30,7 +31,9 @@ Function Get-DotNetInstalledVersion
 	[CmdletBinding()]
 	[OutputType([PsCustomObject])]
 	Param ()
-	
+    
+    Set-StrictMode -Version 'Latest'
+    
 	$DotNetVersion = Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP' -Recurse |
 	Get-ItemProperty -name Version, Release -EA 0 |
 	Where-Object { $_.PSChildName -match '^(?!S)\p{L}' } |

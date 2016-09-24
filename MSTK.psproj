@@ -7,6 +7,7 @@
     <Folder>Functions</Folder>
     <Folder>Modules</Folder>
     <Folder>Applications\Sysinternals</Folder>
+    <Folder>Functions\Legacy</Folder>
   </Folders>
   <Files>
     <File ReferenceName="" Build="2">MSTK.psd1</File>
@@ -154,6 +155,9 @@
     <File ReferenceName="Call-Get-Uptime_ps1" Build="0" CommandExtension="False">Functions\Get-Uptime.ps1</File>
     <File ReferenceName="Call-Convert-WindowsImage_ps1" Build="0" CommandExtension="False">Functions\Convert-WindowsImage.ps1</File>
     <File ReferenceName="Call-Get-InstalledSoftware_ps1" Build="0" CommandExtension="False">Functions\Get-InstalledSoftware.ps1</File>
+    <File ReferenceName="Call-Use-SpellCheck_ps1" Build="0" CommandExtension="False">Functions\Use-SpellCheck.ps1</File>
+    <File ReferenceName="Call-Get-LoggedOnUser_ps1" Build="0" CommandExtension="False">Functions\Get-LoggedOnUser.ps1</File>
+    <File ReferenceName="Call-Get-ClipBoard_ps1" Build="0" CommandExtension="False">Functions\Legacy\Get-ClipBoard.ps1</File>
   </Files>
   <StartupScript>
   </StartupScript>

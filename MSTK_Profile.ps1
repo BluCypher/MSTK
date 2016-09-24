@@ -41,7 +41,7 @@ Function Disable-ExecutionPolicy
 #region SessionPath
 [Array]$SysPath = $Env:Path -Split ';'
 
-$Folders = (Get-ChildItem $PSScriptRoot -Depth 1 -Directory).FullName
+$Folders = (Get-ChildItem $PSScriptRoot -Depth 1 -Directory | Where-Object { $_.Name -ne "Functions" }).FullName
 
 ForEach ($Folder in $Folders)
 {

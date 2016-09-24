@@ -10,6 +10,10 @@
 #>
 
 # Dot-Source all Function Files
-Get-ChildItem -Path $PSScriptRoot\Functions\*.ps1 -Recurse | Foreach-Object { . $_.FullName }
+Get-ChildItem -Path "$PSScriptRoot\Functions\*.ps1" -Recurse | Where-Object { $_.FullName -NotMatch "Legacy" } | Foreach-Object { . $_.FullName }
 
-# Set Aliases
+# Dot-Source Legacy Function Files
+If ($PSVersionTable.PSVersion.ToString() -lt 5.1) # Load if ConsoleHost version is less than 5.1
+{
+    Get-ChildItem -Path "$PSScriptRoot\Functions\Legacy\*.ps1" -Recurse | Foreach-Object { . $_.FullName }
+}

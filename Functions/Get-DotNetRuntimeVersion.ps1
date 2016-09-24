@@ -7,8 +7,9 @@
 	 Created by:   	Mike Sims
 	 Changed on:   	2016-09-15
 	 Changed by:   	Mike Sims
-	 Version:     	1.0
+	 Version:     	1.1
 	 History:      	1.0 - Initial Release - No known bugs
+                    1.1 - Enabled Strict Mode
 	===========================================================================
 	.DESCRIPTION
 		Get-DotNetRuntimeVersion Function
@@ -30,6 +31,8 @@ Function Get-DotNetRuntimeVersion
 	[CmdletBinding()]
 	[OutputType([System.Version])]
 	Param ()
-	
+    
+    Set-StrictMode -Version 'Latest'
+    
 	Return $PSVersionTable.CLRVersion
 }

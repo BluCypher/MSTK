@@ -60,7 +60,9 @@
 	
 	# Script files (.ps1) that are run in the caller's environment prior to
 	# importing this module
-	ScriptsToProcess = @("MSTK_Profile.ps1")
+    ScriptsToProcess = @(
+        "MSTK_Profile.ps1"
+    )
 	
 	# Type files (.ps1xml) to be loaded when importing this module
 	TypesToProcess = @()
@@ -70,7 +72,9 @@
 	
 	# Modules to import as nested modules of the module specified in
 	# ModuleToProcess
-	NestedModules = @()
+    NestedModules = @(
+        "$PSScriptRoot\Modules\PSRemoteRegistry\PSRemoteRegistry.psd1"
+    )
 	
 	# Functions to export from this module
 	FunctionsToExport = '*'

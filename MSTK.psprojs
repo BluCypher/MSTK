@@ -3,8 +3,11 @@
   <FileID>34b0c37f-9e06-44e5-90d9-59c91dbd8c62</FileID>
   <OpenFolders>
     <Folder>Functions</Folder>
+    <Folder>Modules</Folder>
+    <Folder>Functions\Legacy</Folder>
   </OpenFolders>
   <OpenFiles>
     <File>Functions\Get-InstalledSoftware.ps1</File>
+    <File>MSTK.psd1</File>
   </OpenFiles>
 </ProjectState>

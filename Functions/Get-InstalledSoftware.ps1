@@ -7,8 +7,9 @@
 	 Created by:   	Mike Sims
 	 Changed on:   	2016-09-15
 	 Changed by:   	Mike Sims
-	 Version:     	1.0
+	 Version:     	1.1
 	 History:      	1.0 - Initial Release - No known bugs
+                    1.1 - Enabled Strict Mode
 	===========================================================================
 	.DESCRIPTION
 		Get-InstalledSoftware Function
@@ -58,7 +59,9 @@ Function Get-InstalledSoftware
 	)
 	
 	Begin
-	{
+    {
+        Set-StrictMode -Version 'Latest'
+        
 		Write-Verbose -Message "Starting $($MyInvocation.Mycommand)"
 		
 		Set-Variable -Name 'HKLM' -Value '2147483650' -Option Constant -Scope Local
