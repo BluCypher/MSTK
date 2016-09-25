@@ -1,6 +1,15 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
+# Declare files that will always have CRLF line endings on checkout.
+*.psd1 text eol=crlf
+*.psm1 text eol=crlf
+*.ps1 text eol=crlf
+*.psproj text eol=crlf
+*.psbuild text eol=crlf
+*.psprojs text eol=crlf
+*.md text eol=crlf
+
 # Custom for Visual Studio
 *.cs     diff=csharp
 

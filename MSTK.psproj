@@ -158,6 +158,7 @@
     <File ReferenceName="Call-Use-SpellCheck_ps1" Build="0" CommandExtension="False">Functions\Use-SpellCheck.ps1</File>
     <File ReferenceName="Call-Get-LoggedOnUser_ps1" Build="0" CommandExtension="False">Functions\Get-LoggedOnUser.ps1</File>
     <File ReferenceName="Call-Get-ClipBoard_ps1" Build="0" CommandExtension="False">Functions\Legacy\Get-ClipBoard.ps1</File>
+    <File ReferenceName="Call-Update-MSTK_ps1" Build="0" CommandExtension="False">Functions\Update-MSTK.ps1</File>
   </Files>
   <StartupScript>
   </StartupScript>

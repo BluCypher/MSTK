@@ -1,4 +1,4 @@
-﻿<#
+﻿<# 
 	.NOTES
 	===========================================================================
 	 Created with: 	SAPIEN Technologies, Inc., PowerShell Studio 2016 v5.2.119
@@ -37,7 +37,7 @@ Function Get-InstalledSoftware
 			PS C:\> Get-InstalledSoftware -ComputerName 'ComputerName' -Credential (Get-Credential)
 		
 		.NOTES
-			Additional information about the function.
+			
 	#>
 	
 	[CmdletBinding()]
