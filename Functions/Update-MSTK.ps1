@@ -21,3 +21,4 @@ Invoke-WebRequest -Uri 'https://github.com/BluCypher/MSTK/archive/master.zip' -H
 } -OutFile .\MSTK.zip
 
 Expand-Archive -Path C:\Temp\githubDL\MSTK.zip -DestinationPath C:\Temp\githubDL\MSTK
+

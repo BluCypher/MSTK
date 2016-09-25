@@ -1,6 +1,6 @@
 ﻿Function Convert-WindowsImage
 {
-  <# 
+  <#
     .NOTES
         Copyright (c) Microsoft Corporation.  All rights reserved.
 

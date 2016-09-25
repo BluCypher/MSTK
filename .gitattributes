@@ -1,4 +1,4 @@
-# Auto detect text files and perform LF normalization 
+# Auto detect text files and perform LF normalization
 * text=auto
 
 # Declare files that will always have CRLF line endings on checkout.
@@ -9,6 +9,7 @@
 *.psbuild text eol=crlf
 *.psprojs text eol=crlf
 *.md text eol=crlf
+*.txt text eol=crlf
 *.gitattributes text eol=crlf
 *.gitignore text eol=crlf
 
