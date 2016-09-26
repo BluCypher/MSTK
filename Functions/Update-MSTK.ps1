@@ -7,8 +7,9 @@
 	 Created by:   	Mike Sims
 	 Changed on:   	9/25/2016
 	 Changed by:   	Mike Sims
-	 Version:     	1.0
-	 History:      	1.0 - Initial Release - No known bugs
+	 Version:     	1.1
+	 History:      	1.0 - Initial Release - So known bugs!
+                    1.1 - Bug Zapper Edition
      Repository:    git@github.com:BluCypher/MSTK.git
 	===========================================================================
 	.DESCRIPTION
@@ -43,15 +44,6 @@ Function Update-MSTK
     
     Begin
     {
-        $WindowsIdentity = [System.Security.Principal.WindowsIdentity]::GetCurrent()
-        $WindowsPrincipal = New-Object System.Security.Principal.WindowsPrincipal($WindowsIdentity)
-        
-        If (! ($WindowsPrincipal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator)))
-        {
-            Write-Warning "$($MyInvocation.MyCommand.Name) requires administrative privileges."
-            Break
-        }
-        
         [Void][Reflection.Assembly]::LoadWithPartialName("System.IO.Compression.FileSystem")
         
         $AccessTokenBase64 = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$($AccessToken)"))
@@ -71,9 +63,9 @@ Function Update-MSTK
             [System.IO.Directory]::Delete($Destination, $True)
         }
         
-        [Void] (& { [System.IO.Directory]::Delete("$TempFolder\.git") } *>&1)
-        [Void] (& { [System.IO.File]::Delete("$TempFolder\.gitattributes") } *>&1)
-        [Void] (& { [System.IO.File]::Delete("$TempFolder\.gitignore") } *>&1)
+        [Void] (& { [System.IO.Directory]::Delete("$TempFolder\MSTK-master\.git") } *>&1)
+        [Void] (& { [System.IO.File]::Delete("$TempFolder\MSTK-master\.gitattributes") } *>&1)
+        [Void] (& { [System.IO.File]::Delete("$TempFolder\MSTK-master\.gitignore") } *>&1)
         
         [System.IO.Directory]::Move("$TempFolder\MSTK-master", $Destination)
     }
@@ -84,3 +76,5 @@ Function Update-MSTK
         [Void] (& { [System.IO.Directory]::Delete($TempFolder, $True) } *>&1)
     }
 }
+
+New-Alias -Name 'uMSTK' -Value 'Update-MSTK' -Description 'Update MSTK Module'
