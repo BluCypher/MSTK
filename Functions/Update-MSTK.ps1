@@ -35,7 +35,7 @@ Function Update-MSTK
     [CmdletBinding()]
     
     Param (
-        $Destination = (Get-Module -Name MSTK).ModuleBase,
+        $Destination = (Get-Module -Name MSTK).ModuleBase.ToUpper(),
         $AccessToken = "2806fad5b7b3e9de9a74f19e25f1b37ccf7ea71b",
         $URI = "https://github.com/BluCypher/MSTK/archive/master.zip",
         $TempFolder = "$($Env:TEMP)\$([GUID]::NewGuid().Guid)",
