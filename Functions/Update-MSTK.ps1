@@ -31,6 +31,8 @@ Function Update-MSTK
             Additional information about the function.
     #>
     
+    #Requires -RunAsAdministrator
+    
     [CmdletBinding()]
     
     Param (
