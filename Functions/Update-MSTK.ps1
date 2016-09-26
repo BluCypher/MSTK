@@ -8,17 +8,73 @@
 	 Changed on:   	9/25/2016
 	 Changed by:   	Mike Sims
 	 Version:     	1.0
-	 History:      	
+	 History:      	1.0 - Initial Release - No known bugs
      Repository:    git@github.com:BluCypher/MSTK.git
 	===========================================================================
 	.DESCRIPTION
-		
+		Update-MSTK Function
 #>
 
-$OneTimePassword = 672858
-Invoke-WebRequest -Uri 'https://github.com/BluCypher/MSTK/archive/master.zip' -Headers @{
-    "Authorization" = "Basic $BasicCreds"; "X-Github-OTP" = $OneTimePassword
-} -OutFile .\MSTK.zip
-
-Expand-Archive -Path C:\Temp\githubDL\MSTK.zip -DestinationPath C:\Temp\githubDL\MSTK
-
+Function Update-MSTK
+{
+    <#
+        .SYNOPSIS
+            Update MSTK module.
+        
+        .DESCRIPTION
+            Update module from BluCypher\MSTK GitHub repository.
+        
+        .EXAMPLE
+            PS C:\> Update-MSTK
+        
+        .NOTES
+            Additional information about the function.
+    #>
+    
+    [CmdletBinding()]
+    
+    Param (
+        $Destination = (Get-Module -Name MSTK).ModuleBase,
+        $AccessToken = "2806fad5b7b3e9de9a74f19e25f1b37ccf7ea71b",
+        $URI = "https://github.com/BluCypher/MSTK/archive/master.zip",
+        $TempFolder = "$($Env:TEMP)\$([GUID]::NewGuid().Guid)",
+        $TempFile = "$($Env:TEMP)\$(([System.DateTime]::Now).ToString("yyyyMMddhhmmss"))_$($MyInvocation.MyCommand.Name).zip"
+    )
+    
+    Begin
+    {
+        $AccessTokenBase64 = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$($AccessToken)"))
+        
+        $WebClient = [System.Net.WebClient]::New()
+        $WebClient.Headers.Add('Authorization', 'Basic ' + $AccessTokenBase64)
+    }
+    
+    Process
+    {
+        #Invoke-RestMethod -Uri $URI -Headers @{ Authorization = 'Basic ' + $AccessTokenBase64 } -OutFile $TempFile
+        
+        $WebClient.DownloadFile($URI, $TempFile)
+        
+        [System.IO.Compression.ZipFile]::ExtractToDirectory($TempFile, $TempFolder)
+        
+        If ([System.IO.Directory]::Exists($Destination))
+        {
+            [System.IO.Directory]::Delete($Destination, $True)
+        }
+        
+        [System.IO.Directory]::Move("$TempFolder\MSTK-master", $Destination)
+    }
+    
+    End
+    {
+        If ([System.IO.File]::Exists($TempFile))
+        {
+            [System.IO.File]::Delete($TempFile)
+        }
+        
+        If ([System.IO.Directory]::Exists($TempFolder))
+        {
+            [System.IO.Directory]::Delete($TempFolder, $True)
+        }
+    }
+}

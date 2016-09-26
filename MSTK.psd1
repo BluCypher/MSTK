@@ -72,9 +72,7 @@
 	
 	# Modules to import as nested modules of the module specified in
 	# ModuleToProcess
-    NestedModules = @(
-        "$PSScriptRoot\Modules\PSRemoteRegistry\PSRemoteRegistry.psd1"
-    )
+    NestedModules = @()
 	
 	# Functions to export from this module
 	FunctionsToExport = '*'
