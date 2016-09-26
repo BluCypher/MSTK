@@ -45,6 +45,15 @@ Function Update-MSTK
     
     Begin
     {
+        $WindowsIdentity = [System.Security.Principal.WindowsIdentity]::GetCurrent()
+        $WindowsPrincipal = New-Object System.Security.Principal.WindowsPrincipal($WindowsIdentity)
+        
+        If (! ($WindowsPrincipal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator)))
+        {
+            Write-Warning "$($MyInvocation.MyCommand.Name) requires administrative privileges."
+            Return 5
+        }
+        
         [Void][Reflection.Assembly]::LoadWithPartialName("System.IO.Compression.FileSystem")
         
         $AccessTokenBase64 = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$($AccessToken)"))
@@ -66,19 +75,16 @@ Function Update-MSTK
             [System.IO.Directory]::Delete($Destination, $True)
         }
         
+        [Void] (& { [System.IO.Directory]::Delete("$TempFolder\.git") } *>&1)
+        [Void] (& { [System.IO.File]::Delete("$TempFolder\.gitattributes") } *>&1)
+        [Void] (& { [System.IO.File]::Delete("$TempFolder\.gitignore") } *>&1)
+        
         [System.IO.Directory]::Move("$TempFolder\MSTK-master", $Destination)
     }
     
     End
     {
-        If ([System.IO.File]::Exists($TempFile))
-        {
-            [System.IO.File]::Delete($TempFile)
-        }
-        
-        If ([System.IO.Directory]::Exists($TempFolder))
-        {
-            [System.IO.Directory]::Delete($TempFolder, $True)
-        }
+        [Void] (& { [System.IO.File]::Delete($TempFile) } *>&1)
+        [Void] (& { [System.IO.Directory]::Delete($TempFolder, $True) } *>&1)
     }
 }
