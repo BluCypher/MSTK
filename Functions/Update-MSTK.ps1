@@ -31,8 +31,6 @@ Function Update-MSTK
             Additional information about the function.
     #>
     
-    #Requires -RunAsAdministrator
-    
     [CmdletBinding()]
     
     Param (
@@ -51,7 +49,7 @@ Function Update-MSTK
         If (! ($WindowsPrincipal.IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator)))
         {
             Write-Warning "$($MyInvocation.MyCommand.Name) requires administrative privileges."
-            Return 5
+            Break
         }
         
         [Void][Reflection.Assembly]::LoadWithPartialName("System.IO.Compression.FileSystem")
@@ -64,8 +62,6 @@ Function Update-MSTK
     
     Process
     {
-        #Invoke-RestMethod -Uri $URI -Headers @{ Authorization = 'Basic ' + $AccessTokenBase64 } -OutFile $TempFile
-        
         $WebClient.DownloadFile($URI, $TempFile)
         
         [System.IO.Compression.ZipFile]::ExtractToDirectory($TempFile, $TempFolder)
