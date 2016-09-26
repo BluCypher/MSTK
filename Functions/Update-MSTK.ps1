@@ -43,6 +43,8 @@ Function Update-MSTK
     
     Begin
     {
+        [Void][Reflection.Assembly]::LoadWithPartialName("System.IO.Compression.FileSystem")
+        
         $AccessTokenBase64 = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$($AccessToken)"))
         
         $WebClient = [System.Net.WebClient]::New()
