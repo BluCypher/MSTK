@@ -117,4 +117,4 @@ Function Get-UpTime
     }
 }
 
-New-Alias -Name 'Uptime' -Value 'Get-UpTime' -Description 'Get uptime of local or remote system'
+New-Alias -Name 'Uptime' -Value 'Get-UpTime' -Description 'Get uptime of local or remote system' -Force

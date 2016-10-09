@@ -156,5 +156,4 @@ Function Use-SpellCheck
     }
 }
 
-New-Alias -Name 'Check-Spelling' -Value 'Use-SpellCheck' -Description 'Spell Check'
-New-Alias -Name 'Spell' -Value 'Use-SpellCheck' -Description 'Spell Check'
+New-Alias -Name 'Spell' -Value 'Use-SpellCheck' -Description 'Spell Check' -Force

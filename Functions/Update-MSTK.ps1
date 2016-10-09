@@ -8,9 +8,13 @@
 	 Changed on:   	9/25/2016
 	 Changed by:   	Mike Sims
 	 Version:     	1.1
-	 History:      	1.0 - Initial Release - So known bugs!
-                    1.1 - Bug Zapper Edition
+	 History:      	1.0 - Initial Release - So many bugs!
+                    1.1 - Bug Zapper Edition - Mostly Working
      Repository:    git@github.com:BluCypher/MSTK.git
+     TODO:          Add Comments
+                    Add User Feedback
+                    Add Error Handling
+                    Add Logging
 	===========================================================================
 	.DESCRIPTION
 		Update-MSTK Function
@@ -77,4 +81,4 @@ Function Update-MSTK
     }
 }
 
-New-Alias -Name 'uMSTK' -Value 'Update-MSTK' -Description 'Update MSTK Module'
+New-Alias -Name 'uMSTK' -Value 'Update-MSTK' -Description 'Update MSTK Module' -Force

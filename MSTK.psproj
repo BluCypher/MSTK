@@ -8,6 +8,12 @@
     <Folder>Modules</Folder>
     <Folder>Applications\Sysinternals</Folder>
     <Folder>Functions\Legacy</Folder>
+    <Folder>Functions\Text</Folder>
+    <Folder>Functions\.Net</Folder>
+    <Folder>Functions\UnitConversions</Folder>
+    <Folder>Functions\Fun</Folder>
+    <Folder>Functions\WIP</Folder>
+    <Folder>Applications\PortQry</Folder>
   </Folders>
   <Files>
     <File ReferenceName="" Build="2">MSTK.psd1</File>
@@ -150,15 +156,29 @@
     <File ReferenceName="Call-whois64_exe" Build="1">Applications\Sysinternals\whois64.exe</File>
     <File ReferenceName="Call-Winobj_exe" Build="1">Applications\Sysinternals\Winobj.exe</File>
     <File ReferenceName="Call-ZoomIt_exe" Build="1">Applications\Sysinternals\ZoomIt.exe</File>
-    <File ReferenceName="Call-Get-DotNetInstalledVersion_ps1" Build="0" CommandExtension="False">Functions\Get-DotNetInstalledVersion.ps1</File>
-    <File ReferenceName="Call-Get-DotNetRuntimeVersion_ps1" Build="0" CommandExtension="False">Functions\Get-DotNetRuntimeVersion.ps1</File>
+    <File ReferenceName="Call-Get-DotNetInstalledVersion_ps1" Build="0" CommandExtension="False">Functions\.Net\Get-DotNetInstalledVersion.ps1</File>
+    <File ReferenceName="Call-Get-DotNetRuntimeVersion_ps1" Build="0" CommandExtension="False">Functions\.Net\Get-DotNetRuntimeVersion.ps1</File>
     <File ReferenceName="Call-Get-Uptime_ps1" Build="0" CommandExtension="False">Functions\Get-Uptime.ps1</File>
     <File ReferenceName="Call-Convert-WindowsImage_ps1" Build="0" CommandExtension="False">Functions\Convert-WindowsImage.ps1</File>
     <File ReferenceName="Call-Get-InstalledSoftware_ps1" Build="0" CommandExtension="False">Functions\Get-InstalledSoftware.ps1</File>
-    <File ReferenceName="Call-Use-SpellCheck_ps1" Build="0" CommandExtension="False">Functions\Use-SpellCheck.ps1</File>
+    <File ReferenceName="Call-Use-SpellCheck_ps1" Build="0" CommandExtension="False">Functions\Text\Use-SpellCheck.ps1</File>
     <File ReferenceName="Call-Get-LoggedOnUser_ps1" Build="0" CommandExtension="False">Functions\Get-LoggedOnUser.ps1</File>
     <File ReferenceName="Call-Get-ClipBoard_ps1" Build="0" CommandExtension="False">Functions\Legacy\Get-ClipBoard.ps1</File>
     <File ReferenceName="Call-Update-MSTK_ps1" Build="0" CommandExtension="False">Functions\Update-MSTK.ps1</File>
+    <File ReferenceName="Call-Get-PSAutorun_ps1" Build="0" CommandExtension="False">Functions\Get-PSAutorun.ps1</File>
+    <File ReferenceName="Call-Convert-FahrenheitToCelcius_ps1" Build="0" CommandExtension="False">Functions\UnitConversions\Convert-FahrenheitToCelcius.ps1</File>
+    <File ReferenceName="Call-Convert-CelciusToFahrenheit_ps1" Build="0" CommandExtension="False">Functions\UnitConversions\Convert-CelciusToFahrenheit.ps1</File>
+    <File ReferenceName="Call-Convert-CelciusToKelvin_ps1" Build="0" CommandExtension="False">Functions\UnitConversions\Convert-CelciusToKelvin.ps1</File>
+    <File ReferenceName="Call-Convert-KelvinToCelcius_ps1" Build="0" CommandExtension="False">Functions\UnitConversions\Convert-KelvinToCelcius.ps1</File>
+    <File ReferenceName="Call-Convert-FahrenheitToKelvin_ps1" Build="0" CommandExtension="False">Functions\UnitConversions\Convert-FahrenheitToKelvin.ps1</File>
+    <File ReferenceName="Call-Convert-KelvinToFahrenheit_ps1" Build="0" CommandExtension="False">Functions\UnitConversions\Convert-KelvinToFahrenheit.ps1</File>
+    <File ReferenceName="Call-Invoke-RickRoll_ps1" Build="0" CommandExtension="False">Functions\WIP\Invoke-RickRoll.ps1</File>
+    <File ReferenceName="Call-Receive-WebDownload_ps1" Build="0" CommandExtension="False">Functions\WIP\Receive-WebDownload.ps1</File>
+    <File ReferenceName="Call-Convert-ToDecimalTime_ps1" Build="0" CommandExtension="False">Functions\UnitConversions\Convert-ToDecimalTime.ps1</File>
+    <File ReferenceName="Call-WMIExplorer_exe" Build="1">Applications\WMIExplorer.exe</File>
+    <File ReferenceName="Call-config_xml" Build="1">Applications\PortQry\config.xml</File>
+    <File ReferenceName="Call-PortQry_exe" Build="1">Applications\PortQry\PortQry.exe</File>
+    <File ReferenceName="Call-PortQryUI_exe" Build="1">Applications\PortQry\PortQryUI.exe</File>
   </Files>
   <StartupScript>
   </StartupScript>
